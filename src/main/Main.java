@@ -81,7 +81,6 @@ public class Main {
 		long isbn = sc.nextLong();
 		
 		livroDAO.remover(isbn);
-		System.out.println("Livro removido!");
 	}
 	
 	private static void listarTodos() throws ClassNotFoundException, SQLException {
@@ -116,7 +115,6 @@ public class Main {
 		
 		Livro livro = new Livro(isbn,titulo,date,genero);
 		livroDAO.atualizar(livro);
-		System.out.println("Livro atualizado!");
 	}
 
 }
