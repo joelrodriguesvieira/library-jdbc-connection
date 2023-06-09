@@ -72,7 +72,6 @@ public class Main {
 		
 		Livro livro = new Livro(isbn,titulo,date,genero);
 		livroDAO.inserir(livro);
-		System.out.println("Livro cadastrado!");
 	}
 
 	private static void remover() throws ClassNotFoundException, SQLException {
